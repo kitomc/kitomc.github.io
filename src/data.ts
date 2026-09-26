@@ -29,15 +29,17 @@ export const profile = {
 export const projects: Project[] = [
   {
     slug: "fhg",
-    name: "FHG Distribuidora — ERP",
-    tagline: "Sistema de gestión para distribuidora mayorista con financiamiento a cuotas",
+    name: "FHG Distribuidora — Tienda en línea y ERP",
+    tagline: "Electrodomésticos con financiamiento a cuotas: tienda pública y sistema de gestión",
     description:
-      "ERP completo: ventas al contado y financiadas, cartera de cuotas, cobros, cuadres de caja, inventario con clasificación ABC, vendedores, comisiones, telemetría y reportería. Más de 440 commits en TypeScript y PL/pgSQL.",
+      "Tienda en línea con catálogo, financiamiento y entrega a todo el país, más el ERP que la opera: ventas al contado y financiadas, cartera de cuotas, cobros, cuadres de caja, inventario con clasificación ABC, vendedores, comisiones y reportería. Más de 440 commits en TypeScript y PL/pgSQL.",
     role: "Diseño y desarrollo completo",
     ownership: "own",
-    image: "/img/fhg.webp",
+    url: "https://fhgdistribuidora.net",
+    image: "/img/fhg-store.webp",
     stack: ["React", "Vite", "TypeScript", "Supabase", "PostgreSQL", "PL/pgSQL", "TanStack Query", "shadcn/ui", "Playwright"],
     highlights: [
+      "Tienda pública con cotización de cuotas por producto y CTA a WhatsApp",
       "Módulo de financiamiento con morosidad, días de gracia y recargos",
       "Validación de transferencias y cuadre de caja diario",
       "Inventario con escaneo QR y rutas geolocalizadas con Leaflet",
