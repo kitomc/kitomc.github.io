@@ -121,13 +121,13 @@ export const projects: Project[] = [
     name: "Planix",
     tagline: "Portal transaccional de compras empresariales en República Dominicana",
     description:
-      "Plataforma nacional que conecta compradores y proveedores: publicación de procesos de compra, licitaciones e integraciones con ERPs como Oracle NetSuite, SAP, Odoo, Exactus e Infor.",
+      "Plataforma nacional que conecta compradores y proveedores: publicación de procesos de compra, licitaciones y gestión de cotizaciones entre empresas.",
     role: "Desarrollo y mantenimiento como parte del equipo",
     ownership: "team",
     url: "https://planixapp.com.do",
     image: "/img/planix.webp",
-    stack: ["Angular", "Node.js", "REST APIs", "Integraciones ERP"],
-    highlights: ["Integraciones con ERPs empresariales", "Mantenimiento evolutivo y corrección de errores", "Nuevos módulos y QA"],
+    stack: ["Angular", "Node.js", "REST APIs", "Low-code"],
+    highlights: ["Diseño de bases de datos y nuevos módulos low-code", "Mantenimiento evolutivo y corrección de errores", "Pruebas y QA en producción"],
   },
 ];
 
