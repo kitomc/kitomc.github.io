@@ -80,6 +80,17 @@ test.describe("Portfolio", () => {
     expect(res.headers()["content-type"]).toContain("pdf");
   });
 
+  test("English CV is linked next to the Spanish one and downloads", async ({ page }) => {
+    await open(page);
+    const en = page.locator('a[href="/Francis-Gonzalez-AI-Business-Process-Automation.pdf"]');
+    await expect(en.first()).toHaveAttribute("download", "");
+    await expect(en.first()).toContainText("English CV");
+    const res = await page.request.get("/Francis-Gonzalez-AI-Business-Process-Automation.pdf");
+    expect(res.status()).toBe(200);
+    expect(res.headers()["content-type"]).toContain("pdf");
+    await expect(page.locator('a[href*="Full-Stack-Developer"]')).toHaveCount(0);
+  });
+
   test("emits no console errors or failed requests", async ({ page }) => {
     const errors: string[] = [];
     page.on("console", (m) => m.type() === "error" && errors.push(m.text()));

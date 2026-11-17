@@ -267,9 +267,14 @@ function About() {
             </li>
           ))}
         </ul>
-        <a href={profile.cv} download className="btn btn-primary mt-8">
-          Descargar CV <Download size={18} className="arrow" />
-        </a>
+        <div className="mt-8 flex flex-wrap gap-3">
+          <a href={profile.cv} download className="btn btn-primary">
+            Descargar CV <Download size={18} className="arrow" />
+          </a>
+          <a href={profile.cvEn} download className="btn btn-ghost">
+            English CV <Download size={18} className="arrow" />
+          </a>
+        </div>
       </div>
       <aside data-reveal style={{ "--i": 2 } as React.CSSProperties} className="card self-start rounded-2xl border border-line bg-ink-2 p-6">
         <dl className="space-y-5">
@@ -584,6 +589,9 @@ function CTA() {
           </a>
           <a href={profile.cv} download className="btn btn-ghost">
             <Download size={18} /> Descargar CV
+          </a>
+          <a href={profile.cvEn} download className="btn btn-ghost">
+            <Download size={18} /> English CV
           </a>
         </div>
         <ul className="mt-10 flex flex-wrap justify-center gap-x-8 gap-y-3 text-sm text-mist">

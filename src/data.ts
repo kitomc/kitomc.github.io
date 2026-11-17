@@ -25,6 +25,7 @@ export const profile = {
   linkedin: "https://www.linkedin.com/in/francisgonzalez1992/",
   github: "https://github.com/kitomc",
   cv: "/cv-francis-gonzalez.pdf",
+  cvEn: "/Francis-Gonzalez-AI-Business-Process-Automation.pdf",
 };
 
 export const projects: Project[] = [
