@@ -1,6 +1,6 @@
 # Francis Gonzalez — Portfolio
 
-Personal portfolio of Francis Alexander Gonzalez Almonte, Full Stack Developer.
+Personal portfolio of Francis Alexander Gonzalez Almonte, AI Business Process Automation Specialist.
 
 - Live (GitHub Pages): https://kitomc.github.io
 - Live (Cloudflare Pages): https://francis-gonzalez.pages.dev
