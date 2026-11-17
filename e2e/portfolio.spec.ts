@@ -130,12 +130,31 @@ test.describe("Reduced motion", () => {
   });
 });
 
-test.describe("Recruiter signals", () => {
-  test("hero states the stack without scrolling and project cards carry no metric badges", async ({ page }) => {
+test.describe("Positioning", () => {
+  test("sells process automation, not development, in title, meta and hero", async ({ page }) => {
     await open(page);
-    const stack = page.getByRole("list", { name: "Stack principal" });
+    await expect(page).toHaveTitle("Francis Gonzalez · Automatizador de Procesos Empresariales con IA");
+    await expect(page.locator('meta[property="og:title"]')).toHaveAttribute("content", /Automatizador de Procesos Empresariales con IA/);
+    await expect(page.locator('meta[property="og:url"]')).toHaveAttribute("content", "https://kitomc.github.io/");
+    await expect(page.locator('meta[name="description"]')).toHaveAttribute("content", /automatizador de procesos/);
+    await expect(page.getByRole("heading", { level: 1 })).toContainText("Automatizador de Procesos Empresariales con IA");
+    await expect(page.locator("body")).not.toContainText(/full\s?stack/i);
+  });
+
+  test("contact section offers WhatsApp in a new tab", async ({ page }) => {
+    await open(page);
+    const wa = page.locator('#contacto a[href^="https://wa.me/18294810779"]');
+    await expect(wa).toHaveCount(1);
+    await expect(wa).toHaveAttribute("target", "_blank");
+  });
+});
+
+test.describe("Recruiter signals", () => {
+  test("hero states the automation tools without scrolling and project cards carry no metric badges", async ({ page }) => {
+    await open(page);
+    const stack = page.getByRole("list", { name: "Herramientas principales" });
     await expect(stack).toBeInViewport();
-    for (const t of ["React", "TypeScript", "Node.js", "Convex", "Supabase"]) await expect(stack.getByText(t, { exact: true })).toBeVisible();
+    for (const t of ["n8n", "Make", "Zapier", "WhatsApp Meta", "Agentes IA"]) await expect(stack.getByText(t, { exact: true })).toBeVisible();
     const cards = page.locator("#proyectos article");
     await expect(cards).toHaveCount(7);
     await expect(cards.locator(".count")).toHaveCount(0);

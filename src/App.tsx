@@ -6,14 +6,15 @@ import {
   BrainCircuit,
   Building2,
   Check,
-  Code2,
   Download,
   Globe,
   Mail,
   MapPin,
   Menu,
+  MessageCircle,
   Phone,
   Plug,
+  Workflow,
   X,
 } from "lucide-react";
 import { Github, Linkedin } from "./icons";
@@ -110,7 +111,7 @@ function Header() {
           <span className="block text-lg font-bold tracking-tight">
             Francis <span className="text-accent-2">Gonzalez</span>
           </span>
-          <span className="block font-mono text-[10px] uppercase tracking-[0.2em] text-mist">Full Stack Developer</span>
+          <span className="block font-mono text-[10px] uppercase tracking-[0.2em] text-mist">Automatización de procesos con IA</span>
         </a>
         <nav className="hidden items-center gap-7 text-sm md:flex" aria-label="Principal">
           {NAV.map(([id, label]) => (
@@ -159,13 +160,14 @@ function Hero() {
           </p>
           <h1 data-hero style={{ "--i": 1 } as React.CSSProperties} className="text-4xl font-extrabold leading-[1.05] tracking-tight md:text-6xl">
             Francis Gonzalez
-            <span className="mt-2 block text-3xl font-bold text-paper/90 md:text-5xl">Desarrollador Full Stack</span>
+            <span className="mt-2 block text-3xl font-bold text-paper/90 md:text-5xl">Automatizador de Procesos Empresariales con IA</span>
           </h1>
           <p data-hero style={{ "--i": 2 } as React.CSSProperties} className="mt-6 max-w-lg text-lg text-mist">
-            Construyo ERPs, plataformas SaaS e integraciones con IA que las empresas usan a diario. Más de 5 años entregando software en producción para
+            Automatizo los procesos que hoy le quitan horas a tu equipo: ventas, inventario, facturación electrónica y atención al cliente por WhatsApp,
+            con agentes de IA, n8n, Make e integraciones entre tus sistemas. Más de 5 años entregando soluciones en producción para empresas de
             República Dominicana, Estados Unidos y Perú.
           </p>
-          <ul data-hero style={{ "--i": 3 } as React.CSSProperties} className="mt-5 flex flex-wrap gap-2" aria-label="Stack principal">
+          <ul data-hero style={{ "--i": 3 } as React.CSSProperties} className="mt-5 flex flex-wrap gap-2" aria-label="Herramientas principales">
             {profile.stackLine.map((t) => (
               <li key={t} className="chip rounded-md border border-line bg-ink-2/70 px-2.5 py-1 text-xs font-medium text-paper/85">
                 {t}
@@ -182,13 +184,13 @@ function Hero() {
           </div>
           <div data-hero style={{ "--i": 5 } as React.CSSProperties} className="mt-10 flex items-center gap-3 text-sm text-mist">
             <span className="pulse-dot inline-block h-2 w-2 rounded-full bg-emerald-400" />
-            Disponible para posiciones full stack, remoto o en RD
+            Disponible para automatizar procesos en tu empresa, remoto o en RD
           </div>
         </div>
         <div data-hero="portrait" className="relative">
           <img
             src="/img/portrait.webp"
-            alt={`${profile.fullName}, desarrollador full stack`}
+            alt={`${profile.fullName}, automatizador de procesos empresariales con IA`}
             className="mx-auto block aspect-[4/5] w-full max-w-md rounded-2xl object-cover object-top shadow-[0_30px_60px_-30px_rgba(0,0,0,0.8)] ring-1 ring-white/10 md:max-w-none"
             fetchPriority="high"
           />
@@ -243,11 +245,12 @@ function About() {
   return (
     <section id="sobre-mi" className="mx-auto grid max-w-6xl gap-12 px-5 py-24 md:grid-cols-[1.2fr_1fr]">
       <div data-reveal>
-        <h2 className="text-3xl font-bold tracking-tight md:text-4xl">Software que resuelve problemas reales del negocio</h2>
+        <h2 className="text-3xl font-bold tracking-tight md:text-4xl">Automatización que resuelve problemas reales del negocio</h2>
         <p className="mt-5 text-mist">
-          Soy desarrollador full stack con base en Santo Domingo. Diseño y entrego productos de punta a punta: modelo de datos, backend, API e interfaz
-          que la gente realmente usa. He construido ERPs para distribuidoras, colegios y oficinas corporativas, plataformas SaaS con inteligencia artificial
-          y más de una docena de aplicaciones para clientes internacionales.
+          Soy automatizador de procesos empresariales con IA, con base en Santo Domingo. Identifico las tareas repetitivas de tu operación (ventas,
+          inventario, cobros, facturación y atención por WhatsApp) y las convierto en flujos automáticos, agentes de IA e integraciones entre tus sistemas.
+          Cuando el proceso lo necesita, construyo el sistema completo: he entregado ERPs para distribuidoras, colegios y oficinas corporativas, plataformas
+          SaaS con inteligencia artificial y más de una docena de aplicaciones para clientes internacionales.
         </p>
         <p className="mt-4 text-mist">
           Trabajo con especificación primero (SDD), diseño guiado por el dominio (DDD) y programación orientada a objetos. Los agentes LLM son una parte
@@ -294,14 +297,14 @@ function Fact({ icon, label, value, href }: { icon: React.ReactNode; label: stri
 }
 
 /* ---------------- Services ---------------- */
-const serviceIcons = [Code2, Building2, Plug, BrainCircuit];
+const serviceIcons = [Workflow, BrainCircuit, Plug, Building2];
 function Services() {
   return (
     <section id="servicios" className="border-y border-line bg-ink-2/40">
       <div className="mx-auto max-w-6xl px-5 py-24">
         <div data-reveal className="mx-auto mb-12 max-w-2xl text-center">
           <h2 className="text-3xl font-bold tracking-tight md:text-4xl">Qué puedo hacer por tu empresa</h2>
-          <p className="mt-4 text-mist">Cuatro áreas donde ya he entregado resultados medibles en producción.</p>
+          <p className="mt-4 text-mist">Cuatro formas de quitarle trabajo manual a tu equipo, todas ya entregadas en producción.</p>
         </div>
         <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {services.map((s, i) => {
@@ -537,7 +540,7 @@ function Stack() {
     <section id="stack" className="mx-auto max-w-6xl px-5 py-24">
       <div data-reveal className="mb-10 max-w-2xl">
         <h2 className="text-3xl font-bold tracking-tight md:text-4xl">Stack</h2>
-        <p className="mt-3 text-mist">Lo que uso a diario para llevar un producto de la idea a producción.</p>
+        <p className="mt-3 text-mist">Las herramientas con las que automatizo y conecto los procesos de tu empresa.</p>
       </div>
       <div className="grid gap-5 md:grid-cols-2">
         {Object.entries(stack).map(([group, items], i) => (
@@ -562,14 +565,22 @@ function CTA() {
   return (
     <section id="contacto" className="hero-bg relative overflow-hidden border-t border-line">
       <div data-reveal className="relative mx-auto max-w-3xl px-5 py-24 text-center">
-        <h2 className="text-3xl font-bold tracking-tight md:text-5xl">Hablemos de tu próximo proyecto</h2>
+        <h2 className="text-3xl font-bold tracking-tight md:text-5xl">Cuéntame qué proceso quieres automatizar</h2>
         <p className="mx-auto mt-5 max-w-xl text-mist">
-          Busco una posición full stack donde la arquitectura y la mantenibilidad importen. Puedo explicar cada decisión técnica de estos proyectos en una
-          entrevista.
+          Revisamos juntos cómo trabaja hoy tu equipo y dónde la automatización y la IA te ahorran tiempo. Te explico cada propuesta en lenguaje de
+          negocio, sin tecnicismos.
         </p>
         <div className="mt-8 flex flex-wrap justify-center gap-3">
-          <a href={`mailto:${profile.email}?subject=Oportunidad%20Full%20Stack`} className="btn btn-primary">
-            Escríbeme <ArrowRight size={18} className="arrow" />
+          <a
+            href={`https://wa.me/${profile.whatsapp}?text=${encodeURIComponent("Hola Francis, quiero automatizar un proceso en mi empresa.")}`}
+            target="_blank"
+            rel="noreferrer"
+            className="btn btn-primary"
+          >
+            <MessageCircle size={18} /> Escríbeme por WhatsApp <ArrowRight size={18} className="arrow" />
+          </a>
+          <a href={`mailto:${profile.email}?subject=Automatizaci%C3%B3n%20de%20procesos`} className="btn btn-ghost">
+            <Mail size={18} /> Enviar correo
           </a>
           <a href={profile.cv} download className="btn btn-ghost">
             <Download size={18} /> Descargar CV
@@ -599,7 +610,7 @@ function Footer() {
           <p className="font-semibold text-paper">
             Francis <span className="text-accent-2">Gonzalez</span>
           </p>
-          <p className="text-xs">Desarrollador Full Stack</p>
+          <p className="text-xs">Automatizador de Procesos Empresariales con IA</p>
         </div>
         <p className="text-xs">© {new Date().getFullYear()} {profile.fullName}. Todos los derechos reservados.</p>
         <div className="flex gap-2">

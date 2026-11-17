@@ -14,10 +14,11 @@ export type Project = {
 export const profile = {
   name: "Francis Gonzalez",
   fullName: "Francis Alexander Gonzalez Almonte",
-  headline: "Desarrollador Full Stack · Integraciones, automatización e IA",
-  stackLine: ["React", "TypeScript", "Node.js", "Convex", "Supabase", "PostgreSQL", "Bubble.io"],
+  headline: "Automatizador de Procesos Empresariales con IA",
+  stackLine: ["n8n", "Make", "Zapier", "WhatsApp Meta", "Agentes IA", "Claude", "OpenAI"],
   pitch:
-    "Construyo ERPs, plataformas SaaS e integraciones con IA que se usan en producción. Trabajo con SDD, DDD y POO, con agentes LLM como parte indispensable del flujo de desarrollo.",
+    "Automatizo ventas, inventario, facturación y atención al cliente por WhatsApp con IA, n8n y Make, y conecto los sistemas de la empresa. Cuando el proceso lo pide, construyo ERPs y plataformas SaaS a la medida, con el desarrollo asistido por IA como parte indispensable de mi trabajo.",
+  whatsapp: "18294810779",
   location: "Santo Domingo, República Dominicana",
   email: "kitomc.rd@gmail.com",
   phone: "829-481-0779",
@@ -187,9 +188,9 @@ export const experience = [
 ];
 
 export const stack: Record<string, string[]> = {
-  Frontend: ["React", "Next.js", "Angular", "TypeScript", "Tailwind", "shadcn/ui", "Flutter"],
-  Backend: ["Node.js", "Python", "REST APIs", "Convex", "Supabase", "PostgreSQL", "PL/pgSQL"],
-  "IA y automatización": ["Claude", "OpenAI", "Gemini", "DeepSeek", "RAG", "Agentes IA", "MCP", "n8n", "Make"],
+  "IA y automatización": ["n8n", "Make", "Zapier", "Agentes IA", "Claude", "OpenAI", "Gemini", "DeepSeek", "RAG", "MCP"],
+  "Integraciones y datos": ["WhatsApp Meta WABA", "DGII e-CF", "REST APIs", "Webhooks", "Supabase", "Convex", "PostgreSQL", "Google Sheets"],
+  "Sistemas a la medida": ["React", "Next.js", "Angular", "TypeScript", "Node.js", "Python", "Bubble.io", "Flutter"],
   "Cloud y DevOps": ["Cloudflare Workers", "Cloudflare Pages", "Google Cloud Run", "Docker", "Playwright", "Vitest"],
 };
 
@@ -227,20 +228,20 @@ export const education = [
 
 export const services = [
   {
-    name: "Desarrollo Full Stack",
-    text: "Aplicaciones web completas: modelo de datos, backend, API e interfaz. React, TypeScript, Node.js, Convex, Supabase y PostgreSQL.",
+    name: "Automatización de procesos",
+    text: "Ventas, cotizaciones, cobros, inventario y reportes que hoy se hacen a mano, convertidos en flujos automáticos con n8n, Make y Zapier.",
+  },
+  {
+    name: "WhatsApp y agentes de IA",
+    text: "Atención al cliente por WhatsApp con agentes de IA que responden, califican y registran cada conversación. WhatsApp Meta, Claude, OpenAI y Gemini.",
+  },
+  {
+    name: "Integración de sistemas",
+    text: "Tus herramientas conectadas para que los datos fluyan solos: facturación electrónica de la DGII (e-CF), Stripe, Slack, Zoho, Calendly, Google Sheets y más de 20 plataformas.",
   },
   {
     name: "ERPs y sistemas de gestión",
-    text: "Ventas, cartera, inventario, cobros, reportería y roles. Tres ERPs en producción para distribuidoras, colegios y oficinas corporativas.",
-  },
-  {
-    name: "Integraciones y automatización",
-    text: "APIs de terceros, webhooks, n8n, Make y Zapier. Facturación electrónica de la DGII (e-CF), Stripe, WhatsApp Meta, Slack, Zoho, Calendly y más de 20 plataformas.",
-  },
-  {
-    name: "IA aplicada al negocio",
-    text: "Agentes LLM, RAG, visión por computadora para escaneo de planos y asistentes que auditan datos. Claude, OpenAI, Gemini y DeepSeek.",
+    text: "Cuando el proceso necesita su propio sistema: ventas, cartera, inventario, cobros y reportería. Tres ERPs en producción para distribuidoras, colegios y oficinas corporativas.",
   },
 ];
 
