@@ -276,7 +276,7 @@ function About() {
           <Fact icon={<MapPin size={18} />} label="Ubicación" value={profile.location} />
           <Fact icon={<Mail size={18} />} label="Correo" value={profile.email} href={`mailto:${profile.email}`} />
           <Fact icon={<Phone size={18} />} label="Teléfono" value={`+1 ${profile.phone}`} href={`tel:+1${profile.phone.replace(/-/g, "")}`} />
-          <Fact icon={<Globe size={18} />} label="Idiomas" value="Español nativo · Inglés intermedio" />
+          <Fact icon={<Globe size={18} />} label="Idiomas" value="Español nativo · Inglés: lectura y escritura (técnico), conversación básica" />
           <Fact icon={<Building2 size={18} />} label="Modalidad" value="Remoto · Híbrido · Presencial en RD" />
         </dl>
       </aside>
