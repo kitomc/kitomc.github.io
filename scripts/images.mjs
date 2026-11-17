@@ -12,7 +12,6 @@ const shots = [
   ["httpsstructure.sandov.ai system.png", "structure-app", null],
   ["httpsestimapro-rd.pages.dev app que conecta presupuesto de ingeniero con ferreterias , escaner de planos con AI y crea cotizacion.png", "estimapro", 900],
   ["httpscooksnap-4kh.pages.dev app de cocina con AI.png", "cooksnap", null],
-  ["cocire.edu.do + ERP.png", "cocire", 900],
   ["spatium ERP.png", "spatium", 900],
   ["planixapp.com.do ERP de compras y contrataciones en el sector privado en republica dominicana.png", "planix", 900],
 ];

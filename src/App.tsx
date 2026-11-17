@@ -241,7 +241,7 @@ function TrustedBy() {
 
 /* ---------------- About ---------------- */
 function About() {
-  const facts = ["5+ años de experiencia", "18+ productos entregados", "3 ERPs en producción", "Disponible de inmediato"];
+  const facts = ["5+ años de experiencia", "18+ productos entregados", "2 ERPs en producción", "Disponible de inmediato"];
   return (
     <section id="sobre-mi" className="mx-auto grid max-w-6xl gap-12 px-5 py-24 md:grid-cols-[1.2fr_1fr]">
       <div data-reveal>
@@ -249,7 +249,7 @@ function About() {
         <p className="mt-5 text-mist">
           Soy automatizador de procesos empresariales con IA, con base en Santo Domingo. Identifico las tareas repetitivas de tu operación (ventas,
           inventario, cobros, facturación y atención por WhatsApp) y las convierto en flujos automáticos, agentes de IA e integraciones entre tus sistemas.
-          Cuando el proceso lo necesita, construyo el sistema completo: he entregado ERPs para distribuidoras, colegios y oficinas corporativas, plataformas
+          Cuando el proceso lo necesita, construyo el sistema completo: he entregado ERPs para distribuidoras y oficinas corporativas, plataformas
           SaaS con inteligencia artificial y más de una docena de aplicaciones para clientes internacionales.
         </p>
         <p className="mt-4 text-mist">

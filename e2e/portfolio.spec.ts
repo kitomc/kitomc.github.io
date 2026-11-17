@@ -23,11 +23,11 @@ test.describe("Portfolio", () => {
     await expect(page.getByRole("heading", { name: /SDD, DDD y POO/ })).toBeVisible();
   });
 
-  test("lists the seven projects with the correct ownership labels", async ({ page }) => {
+  test("lists the six projects with the correct ownership labels", async ({ page }) => {
     await open(page);
     const cards = page.locator("#proyectos article");
-    await expect(cards).toHaveCount(7);
-    await expect(page.locator("#proyectos").getByText("Desarrollado por mí")).toHaveCount(6);
+    await expect(cards).toHaveCount(6);
+    await expect(page.locator("#proyectos").getByText("Desarrollado por mí")).toHaveCount(5);
     await expect(page.locator("#proyectos").getByText("Desarrollo y mantenimiento en equipo")).toHaveCount(1);
     const planix = cards.filter({ hasText: "Planix" });
     await expect(planix.getByText("Desarrollo y mantenimiento en equipo")).toBeVisible();
@@ -156,7 +156,7 @@ test.describe("Recruiter signals", () => {
     await expect(stack).toBeInViewport();
     for (const t of ["n8n", "Make", "Zapier", "WhatsApp Meta", "Agentes IA"]) await expect(stack.getByText(t, { exact: true })).toBeVisible();
     const cards = page.locator("#proyectos article");
-    await expect(cards).toHaveCount(7);
+    await expect(cards).toHaveCount(6);
     await expect(cards.locator(".count")).toHaveCount(0);
   });
 });

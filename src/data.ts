@@ -95,19 +95,6 @@ export const projects: Project[] = [
     highlights: ["Generación de recetas con LLM", "i18n ES/EN", "Diseño mobile-first"],
   },
   {
-    slug: "cocire",
-    name: "Colegio Ciudad Real — Web + ERP",
-    tagline: "Sitio institucional y sistema de gestión escolar",
-    description:
-      "Sitio público para admisiones, oferta académica y galería, junto a un ERP interno para la operación del colegio: matrículas, cobros y administración.",
-    role: "Diseño y desarrollo completo",
-    ownership: "own",
-    url: "https://cocire.edu.do",
-    image: "/img/cocire.webp",
-    stack: ["React", "TypeScript", "Supabase", "PostgreSQL", "Cloudflare"],
-    highlights: ["Landing orientada a admisiones con CTA a WhatsApp", "ERP escolar para la administración"],
-  },
-  {
     slug: "spatium",
     name: "Spatium — Sitio corporativo y ERP",
     tagline: "Oficinas corporativas y coworking en Santo Domingo",
@@ -248,11 +235,11 @@ export const services = [
   },
   {
     name: "ERPs y sistemas de gestión",
-    text: "Cuando el proceso necesita su propio sistema: ventas, cartera, inventario, cobros y reportería. Tres ERPs en producción para distribuidoras, colegios y oficinas corporativas.",
+    text: "Cuando el proceso necesita su propio sistema: ventas, cartera, inventario, cobros y reportería. Dos ERPs en producción para distribuidoras y oficinas corporativas.",
   },
 ];
 
-export const trustedBy = ["FHG Distribuidora", "Spatium", "Delphi One", "Planix", "Kreante", "COCIRE", "Boosty Digital"];
+export const trustedBy = ["FHG Distribuidora", "Spatium", "Delphi One", "Planix", "Kreante", "Boosty Digital"];
 
 export const integrations = [
   "DGII · Facturación electrónica (e-CF)", "Stripe", "WhatsApp Meta WABA", "MyZap", "Slack", "Zoho", "Calendly", "Vimeo", "VideoAsk", "Sportmonks",
