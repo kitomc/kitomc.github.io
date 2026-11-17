@@ -136,9 +136,9 @@ export const projects: Project[] = [
 
 export const experience = [
   {
-    company: "Boosty Digital / Spatium",
+    company: "Boosty Digital / Spatium (segunda etapa)",
     role: "Integrador Sénior · Bubble Developer · Automatizador de procesos con IA (tiempo completo, híbrido)",
-    period: "Nov 2022 — Jun 2026",
+    period: "Ene 2025 — Mar 2026",
     location: "Santo Domingo, RD",
     bullets: [
       "Diseño e implementación de soluciones de software para la operación de oficinas corporativas y coworking",
@@ -166,6 +166,13 @@ export const experience = [
       "Desarrollo y mantenimiento del portal de compras empresariales como parte del equipo",
       "Diseño de bases de datos y desarrollo low-code de nuevos módulos",
     ],
+  },
+  {
+    company: "Boosty Digital / Spatium (primera etapa)",
+    role: "Integrador Sénior · Bubble Developer · Automatizador de procesos con IA (tiempo completo, híbrido)",
+    period: "Nov 2022 — Mar 2024",
+    location: "Santo Domingo, RD",
+    bullets: ["Diseño e implementación de soluciones de software, mantenimiento y mejora de aplicaciones"],
   },
   {
     company: "Mkt Nativo",
