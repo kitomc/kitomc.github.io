@@ -14,10 +14,11 @@ Personal portfolio site for Francis Gonzalez (Full Stack Developer). Static Reac
 <!-- project-status:start -->
 ## Project status
 
-- Active branch: `main`, remote `origin` = github.com/kitomc/kitomc.github.io.
-- Live URLs: https://kitomc.github.io (GitHub Pages, deployed by `.github/workflows/pages.yml` on push to main) and https://francis-gonzalez.pages.dev (Cloudflare Pages, `npm run deploy`).
-- Latest change: Planix description no longer names ERP vendors (Oracle NetSuite, SAP, Odoo, Exactus, Infor) because the owner never integrated them; stack chips and highlights updated accordingly. E2E suite (24 tests) green.
-- Public CVs: `/cv-francis-gonzalez.pdf` (Spanish, single column, ATS) and `/Francis-Gonzalez-Full-Stack-Developer.pdf` (English, one page). Both are regenerated from `../Curri/build_cv.js` and `../Curri/build_cv_en.js` and copied into `public/`.
-- Both hosts are current: GitHub Pages workflow succeeded and Cloudflare deploy went to the personal account.
-- Pending: copy the regenerated CV PDFs (without ERP vendors) into `public/` and redeploy; owner still has to fill the two `[ADD METRIC]` placeholders in the English CV.
+- Purpose: hiring landing for Francis Gonzalez, positioned as "Automatizador de Procesos Empresariales con IA" (owner decision 2026-11-17: never present him as developer / Full Stack). Traffic comes from social media and paid ads.
+- Active branch: `main`, remote `origin` = github.com/kitomc/kitomc.github.io. No `dev` branch or preview environment exists yet.
+- Live URLs: https://kitomc.github.io (GitHub Pages, deployed by `.github/workflows/pages.yml` on push to main) and https://francis-gonzalez.pages.dev (Cloudflare Pages, `npm run deploy`, personal account only).
+- Published on GitHub Pages: automation positioning across the site; public CV PDFs (`public/`, built from `../Curri/build_cv*.js`) carry the automator title; Boosty Digital / Spatium is split into two stages (Nov 2022 - Mar 2024, Ene 2025 - Mar 2026) with Delphi One in between (Mar 2024 - Ene 2025), matching the CVs.
+- Languages line (owner decision): "Español nativo · Inglés: lectura y escritura (técnico), conversación básica". Never claim intermediate or spoken English.
+- Tests: `npm test` reuses any server on port 4173, so another project's Vite preview on that port makes the suite test the wrong app. Free the port first, or run Playwright with a temporary config that serves `vite preview` on another port.
+- Pending: Cloudflare Pages has not been redeployed with the current copy; landing specs for UTM capture and Meta Pixel are in `../campaign/captacion-leads.md` section 5 and are not implemented; no `dev` branch or preview environment.
 <!-- project-status:end -->
