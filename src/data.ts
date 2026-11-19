@@ -213,12 +213,15 @@ export const methodology = [
 ];
 
 export const education = [
-  { name: "Claude Code LLM", issuer: "Vanderbilt University" },
+  { name: "Ciencia De Datos - Nivel Avanzado (860 horas)", issuer: "INDOTEL / BID / Cymetria (2026)" },
+  { name: "Big Data Certification Expert", issuer: "Certiplus (2026)" },
+  { name: "Claude Code: Software Engineering with Generative AI Agents", issuer: "Vanderbilt University (2026)" },
   { name: "Fundamentos de Machine Learning", issuer: "Platzi" },
   { name: "Google Cloud Platform", issuer: "Platzi" },
   { name: "Programador No Code Bubble.io", issuer: "Platzi" },
-  { name: "Técnico en Desarrollo de Software", issuer: "INFOTEP" },
   { name: "Inglés de Inmersión", issuer: "UNPHU" },
+  { name: "Técnico Programador", issuer: "INFOTEP (2017)" },
+  { name: "Universidad del Caribe (UNICARIBE)", issuer: "matriculado, estudios en pausa" },
 ];
 
 export const services = [

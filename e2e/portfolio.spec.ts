@@ -152,6 +152,16 @@ test.describe("Positioning", () => {
     await expect(page.locator("body")).not.toContainText(/full\s?stack/i);
   });
 
+  test("education states the owner-confirmed INFOTEP diploma and UNICARIBE enrolment", async ({ page }) => {
+    await open(page);
+    const list = page.locator("#experiencia ul").first();
+    await expect(list).toContainText("Técnico Programador");
+    await expect(list).toContainText("INFOTEP (2017)");
+    await expect(list).toContainText("Universidad del Caribe (UNICARIBE)");
+    await expect(list).toContainText("matriculado, estudios en pausa");
+    await expect(list).not.toContainText("Técnico en Desarrollo de Software");
+  });
+
   test("contact section offers WhatsApp in a new tab", async ({ page }) => {
     await open(page);
     const wa = page.locator('#contacto a[href^="https://wa.me/18294810779"]');
