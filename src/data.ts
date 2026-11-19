@@ -177,14 +177,14 @@ export const experience = [
     bullets: [
       "Desarrollo de más de 12 aplicaciones web y móviles en Bubble.io para clientes de EE. UU., Francia, Perú y RD",
       "Autor de 5 plugins publicados en el marketplace de Bubble (WhatsApp Meta, MyZap, Google Drive, LinkedIn, NowPayments)",
-      "Integraciones API con Stripe, Slack, Zoho, Calendly, EasyBroker, Factusol y automatizaciones con Make, n8n y Zapier",
+      "Integración de APIs y servicios externos en aplicaciones Bubble.io (Stripe, Slack, Zoho, Calendly, EasyBroker, Factusol) y automatizaciones con Make, n8n y Zapier",
     ],
   },
 ];
 
 export const stack: Record<string, string[]> = {
   "IA y automatización": ["n8n", "Make", "Zapier", "Agentes IA", "Claude", "OpenAI", "Gemini", "DeepSeek", "RAG", "MCP"],
-  "Integraciones y datos": ["WhatsApp Meta WABA", "DGII e-CF", "REST APIs", "Webhooks", "Supabase", "Convex", "PostgreSQL", "Google Sheets"],
+  "Integraciones y datos": ["WhatsApp Meta WABA", "DGII e-CF", "Zoho CRM", "Kommo CRM", "REST APIs", "Webhooks", "Supabase", "Convex", "PostgreSQL", "Google Sheets", "Excel avanzado"],
   "Sistemas a la medida": ["React", "Next.js", "Angular", "TypeScript", "Node.js", "Python", "Bubble.io", "Flutter"],
   "Cloud y DevOps": ["Cloudflare Workers", "Cloudflare Pages", "Google Cloud Run", "Docker", "Playwright", "Vitest"],
 };
@@ -224,7 +224,7 @@ export const education = [
 export const services = [
   {
     name: "Automatización de procesos",
-    text: "Ventas, cotizaciones, cobros, inventario y reportes que hoy se hacen a mano, convertidos en flujos automáticos con n8n, Make y Zapier.",
+    text: "Conciliación bancaria, cotizaciones, agendamiento, procesos de ventas, cobros, inventario y reportes que hoy se hacen a mano, convertidos en flujos automáticos con n8n, Make y Zapier.",
   },
   {
     name: "WhatsApp y agentes de IA",
@@ -232,7 +232,7 @@ export const services = [
   },
   {
     name: "Integración de sistemas",
-    text: "Tus herramientas conectadas para que los datos fluyan solos: facturación electrónica de la DGII (e-CF), Stripe, Slack, Zoho, Calendly, Google Sheets y más de 20 plataformas.",
+    text: "Tus herramientas conectadas para que los datos fluyan solos: facturación electrónica de la DGII (e-CF), Stripe, Slack, Zoho CRM, Kommo CRM, Calendly, Google Sheets y más de 20 plataformas.",
   },
   {
     name: "ERPs y sistemas de gestión",
@@ -243,7 +243,7 @@ export const services = [
 export const trustedBy = ["FHG Distribuidora", "Spatium", "Delphi One", "Planix", "Kreante", "Boosty Digital"];
 
 export const integrations = [
-  "DGII · Facturación electrónica (e-CF)", "Stripe", "WhatsApp Meta WABA", "MyZap", "Slack", "Zoho", "Calendly", "Vimeo", "VideoAsk", "Sportmonks",
+  "DGII · Facturación electrónica (e-CF)", "Stripe", "WhatsApp Meta WABA", "MyZap", "Slack", "Zoho CRM", "Kommo CRM", "Calendly", "Vimeo", "VideoAsk", "Sportmonks",
   "EasyBroker", "Factusol", "e.FACT", "Mintsoft", "Proxycurl (LinkedIn)", "NowPayments", "Google Drive", "Google Sheets",
   "OpenAI", "n8n", "Make (Integromat)", "Zapier",
 ];
