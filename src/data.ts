@@ -34,7 +34,7 @@ export const projects: Project[] = [
     name: "FHG Distribuidora — Tienda en línea y ERP",
     tagline: "Electrodomésticos con financiamiento a cuotas: tienda pública y sistema de gestión",
     description:
-      "Tienda en línea con catálogo, financiamiento y entrega a todo el país, más el ERP que la opera: ventas al contado y financiadas, cartera de cuotas, cobros, cuadres de caja, inventario con clasificación ABC, vendedores, comisiones y reportería. Más de 440 commits en TypeScript y PL/pgSQL.",
+      "Tienda en línea con catálogo, financiamiento y entrega a todo el país, más el ERP que la opera: ventas al contado y financiadas, cartera de cuotas, cobros, cuadres de caja, inventario con clasificación ABC, vendedores, comisiones y reportería. Incluye un agente de IA que asiste las tareas administrativas y comerciales de la distribuidora. Más de 440 commits en TypeScript y PL/pgSQL.",
     role: "Diseño y desarrollo completo",
     ownership: "own",
     url: "https://fhgdistribuidora.net",
@@ -46,6 +46,24 @@ export const projects: Project[] = [
       "Validación de transferencias y cuadre de caja diario",
       "Inventario con escaneo QR y rutas geolocalizadas con Leaflet",
       "Reportes con Recharts y exportación a Excel",
+      "Agente de IA para las tareas administrativas y comerciales",
+    ],
+  },
+  {
+    slug: "eddileydi-spa",
+    name: "Eddileydi Spa — Sitio web",
+    tagline: "Sitio de un spa de masajes reductores, postoperatorios y relajación",
+    description:
+      "Sitio web para un spa de bienestar y estética corporal: servicios, galería de resultados con fotos reales, horarios y contacto. Cada servicio lleva a WhatsApp con el mensaje ya redactado para consultar o reservar la cita, y el personal entra por un acceso propio.",
+    role: "Diseño y desarrollo completo",
+    ownership: "own",
+    url: "https://eddileydi-spa.royerdjsm.workers.dev/",
+    image: "/img/eddileydi-spa.webp",
+    stack: ["Cloudflare Workers", "WhatsApp"],
+    highlights: [
+      "Servicios y galería con fotos reales de sesiones",
+      "CTA a WhatsApp por servicio con mensaje prellenado",
+      "Acceso del personal y diseño responsive",
     ],
   },
   {

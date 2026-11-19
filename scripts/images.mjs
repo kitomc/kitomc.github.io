@@ -1,8 +1,25 @@
 import sharp from "sharp";
 import { mkdirSync } from "node:fs";
+import { fileURLToPath } from "node:url";
 
 const src = "C:/Users/Usuario/Documents/KMC/Curri/";
 const out = "C:/Users/Usuario/Documents/KMC/portfolio/public/img/";
+
+// Single-shot mode: `node scripts/images.mjs <screenshot.png> <output-name> [cropHeight]`
+// converts one fresh screenshot (taken after scrolling so reveal animations are visible) and exits.
+if (process.argv[2]) {
+  const [file, name, crop = "900"] = process.argv.slice(2);
+  const img = sharp(file);
+  const meta = await img.metadata();
+  await img
+    .extract({ left: 0, top: 0, width: meta.width, height: Math.min(Number(crop), meta.height) })
+    .resize({ width: Math.min(meta.width, 1440) })
+    .webp({ quality: 80 })
+    .toFile(fileURLToPath(new URL(`../public/img/${name}.webp`, import.meta.url)));
+  console.log("ok", name);
+  process.exit(0);
+}
+
 mkdirSync(out, { recursive: true });
 
 // [source file, output name, crop height from top (null = keep aspect)]
